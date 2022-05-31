@@ -4,7 +4,7 @@ const { promisify } = require('util')
 const parseAsync = promisify(parse)
 
 
-const url = 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/0322689cc2927d068f21906776a06463e7584ebb/csse_covid_19_data/csse_covid_19_daily_reports/_DATE_.csv'
+const url = 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/0322689cc2927d068f21906776a06463e7584ebb/csse_covid_19_data/csse_covid_19_daily_reports/05-22-2022.csv'
 
 
 const download = async () => {

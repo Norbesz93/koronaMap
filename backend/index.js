@@ -1,5 +1,6 @@
 const { downloadAndParse } = require('./data')
 const express = require('express')
+const cors = require('cors')
 
 
 const run = async () => {
@@ -10,6 +11,7 @@ const run = async () => {
     }, 1000 * 60 * 60 * 4);
 
     const app = express()
+    app.use(cors())
     
     app.get('/', (req, res) => {
         res.send
